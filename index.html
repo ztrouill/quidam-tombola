@@ -5,20 +5,24 @@
     <link rel="icon" type="image/svg+xml" href="/quidam.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>quidam-tombola</title>
-    <script type="module" crossorigin src="/assets/main-C7xQ1Pnq.js"></script>
+    <script type="module" crossorigin src="/assets/main-BhyYQl0l.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/main-Bvw0U4jr.css">
   </head>
   <body>
-    <div id="front">
-        <div id="background"></div>
-        <div id="ticket">
-          <button id="resultat">?</button>
-        </div>
-        <div id="sunshine">
-            <div class="bg-svg" id="first-sun"></div>
+    <div id="backoffice">
+      <div id="listes">
+        <p>Tickets restants : <span id="remaining"></span> </p>
+        <p>Tickets sortis : <span id="out"></span></p>
+        <p>Résultat : <span id="drawn"></span></p>
+      </div>
 
-            <div class="bg-svg" id="second-sun"></div>
-        </div>
+      <div id="ticket">
+        <input id="number" type="number" placeholder="Nombre de ticket"/>
+        <button id="add">Ajouter les tickets</button>
+        <button id="counter">Ajouter les tickets via compteur</button>
+        <button id="reset">Reset tombola</button>
+        <button id="goto"><a href="./front.html">Allez à la page tirage</a></button>
+      </div>
     </div>
   </body>
 </html>
